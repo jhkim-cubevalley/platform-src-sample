@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @variants responsive {
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  }
+}
+
+@layer components {
+  .flight-info-title {
+    @apply font-['Pretendard'] text-[25px] font-semibold leading-[30px] text-[#00182f];
+  }
+
+  .put-center {
+    @apply absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-ic {
+    @apply flex items-center;
+  }
+
+  .flex-i-c {
+    @apply flex items-center;
+  }
+}

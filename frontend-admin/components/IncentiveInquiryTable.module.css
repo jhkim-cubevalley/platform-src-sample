@@ -1,0 +1,8 @@
+.table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 0px 10px;
+  border-collapse: separate;
+  text-align: justify;
+  table-layout: fixed;
+}

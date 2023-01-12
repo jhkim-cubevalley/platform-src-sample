@@ -1,0 +1,6 @@
+[{
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { "namespace": "android_app", "package_name": "kr.cubeez.test.twa",
+                     "sha256_cert_fingerprints": ["E6:3D:36:37:20:E0:3F:53:9A:9E:01:CD:02:14:10:1D:86:B6:D3:25:75:06:CD:6D:BC:CE:14:6A:8F:5A:4B:09"] }
+      }
+]

@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      docker: 20
+    commands:
+      - aws --version
+      - $(aws ecr get-login --no-include-email --region ap-northeast-2)
+  build:
+    commands:
+      - docker build -t cubevalley-test .
+  post_build:
+    commands:
+      - docker tag cubevalley-test:latest 046411683769.dkr.ecr.ap-northeast-2.amazonaws.com/cubevalley-test:latest
+      - docker push 046411683769.dkr.ecr.ap-northeast-2.amazonaws.com/cubevalley-test:latest

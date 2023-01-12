@@ -1,0 +1,35 @@
+.table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 0px 10px;
+  border-collapse: separate;
+}
+
+.table thead {
+  height: 48px;
+  /* border: 1px solid #BABABA; */
+  outline: thin solid #BABABA;
+  border-radius: 5px;
+}
+
+.table thead th {
+  font-weight: bold;
+  color: #353535;
+}
+
+.table tr>*:first-child {
+  padding-left: 30px;
+}
+
+.table tr>*:last-child {
+  padding-right: 30px;
+}
+
+.table tbody tr {
+  height: 48px;
+  /* border: 1px solid #EAEAEA; */
+  outline: thin solid #EAEAEA;
+  border-radius: 5px;
+  overflow: hidden;
+  background: white;
+}
